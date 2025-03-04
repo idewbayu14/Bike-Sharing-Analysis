@@ -21,7 +21,7 @@
    ```
 3. Run the Streamlit app:  
    ```bash
-   streamlit run dashboard.py
+   streamlit run dashboard/dashboard.py
    ```
 
 ## 📌 Data Source
