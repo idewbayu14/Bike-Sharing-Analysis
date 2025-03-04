@@ -29,7 +29,7 @@ The dataset used in this project contains bike rental data, including weather co
 Souce : https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset
 
 ## 📷 Preview
-![Dashboard Preview]()
+![Dashboard Preview](dashboard.png)
 
 ## 📜 License
 This project is licensed under the **MIT License**. Feel free to modify and use it!
