@@ -28,7 +28,7 @@
 The dataset used in this project contains bike rental data, including weather conditions, rental counts, and timestamps.
 
 ## 📷 Preview
-![Dashboard Preview](path/to/dashboard.png)
+![Dashboard Preview](dashboard.png)
 
 ## 📜 License
 This project is licensed under the **MIT License**. Feel free to modify and use it!
