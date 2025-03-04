@@ -6,15 +6,15 @@ import seaborn as sns
 # Load Data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("all_data.csv")
-    return df
+    all_data = pd.read_csv('all_data.csv')
+    return all_data
 
-df = load_data()
+all_data = load_data()
 
 # Sidebar
 st.sidebar.title("🏷️ Filter Data")
-day_filter = st.sidebar.multiselect("📌 Pilih Hari Kerja / Libur", df['workingday'].unique(), default=df['workingday'].unique())
-weather_filter = st.sidebar.multiselect("🌤️ Pilih Kondisi Cuaca", df['weathersit'].unique(), default=df['weathersit'].unique())
+day_filter = st.sidebar.multiselect("📌 Pilih Hari Kerja / Libur", all_data['workingday'].unique(), default=all_data['workingday'].unique())
+weather_filter = st.sidebar.multiselect("🌤️ Pilih Kondisi Cuaca", all_data['weathersit'].unique(), default=all_data['weathersit'].unique())
 
 # Penjelasan kondisi cuaca
 st.sidebar.markdown("### 🌦️ Kategori Kondisi Cuaca:")
@@ -24,7 +24,7 @@ st.sidebar.markdown("🌧️❄️ 3 - Hujan Ringan / Salju Ringan")
 st.sidebar.markdown("⛈️❄️ 4 - Hujan Deras / Salju Lebat / Badai")
 
 # Filter data
-filtered_df = df[(df['workingday'].isin(day_filter)) & (df['weathersit'].isin(weather_filter))]
+filtered_df = all_data[(all_data['workingday'].isin(day_filter)) & (all_data['weathersit'].isin(weather_filter))]
 
 # Pastikan kolom 'Cluster' ada dalam dataset sebelum digunakan
 if 'Cluster' not in filtered_df.columns:
