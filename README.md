@@ -26,6 +26,7 @@
 
 ## 📌 Data Source
 The dataset used in this project contains bike rental data, including weather conditions, rental counts, and timestamps.
+Souce : https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset
 
 ## 📷 Preview
 ![Dashboard Preview](dashboard.png)
