@@ -6,7 +6,7 @@ import seaborn as sns
 # Load Data
 @st.cache_data
 def load_data():
-    all_data = pd.read_csv('all_data.csv')
+    all_data = pd.read_csv('bike_sharing_analysis.csv')
     return all_data
 
 all_data = load_data()
